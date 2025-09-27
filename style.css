@@ -1,6 +1,6 @@
 *{
     margin: 0px;
-    border: border-box;
+    box-sizing: border-box;
     box-sizing: border-box;
     font-style:arial;
 }
@@ -502,5 +502,6 @@ ul{
         padding: 3px 0;
     }
 }
+
 
 
