@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     border: border-box;
+    box-sizing: border-box;
     font-style:arial;
 }
 .navbar{
@@ -160,19 +161,17 @@ justify-content: space-evenly;
 background-color: #e2e7e6;
 flex-wrap: wrap;
 }
-.box{
-    
+.box{ 
     height: 400px;
     width: 23%;
     background-color: #ffffff;
     padding: 20px 0px 15px ;
     margin-top: 15px;
-
 }
 .box-imag{
     background-size: cover;
     height: 300px;
-    margin: top 1rem; 
+    margin-top: 1rem; 
     margin-bottom: 1rem;
 }
 .box-cont{
@@ -503,6 +502,5 @@ ul{
         padding: 3px 0;
     }
 }
-
 
 
