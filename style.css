@@ -1,7 +1,6 @@
 *{
     margin: 0px;
     box-sizing: border-box;
-    box-sizing: border-box;
     font-style:arial;
 }
 .navbar{
@@ -26,12 +25,10 @@ width: 100px;
 }
 .border{
    border: 1.5px solid transparent;
-
 }
 .border:hover{
     border: 1.5px solid white;
 }
-
 /**2 box  **/
 .address-first{
     font-size: 0.85rem;
@@ -502,6 +499,7 @@ ul{
         padding: 3px 0;
     }
 }
+
 
 
 
