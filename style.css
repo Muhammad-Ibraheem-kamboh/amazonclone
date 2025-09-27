@@ -21,7 +21,7 @@ width: 100px;
    height: 50px;
    width: 100%;
    background-size: cover;
-  margin-top: 10px opx 10px 0px; 
+  margin-top: 10px 0px 10px 0px; 
 }
 .border{
    border: 1.5px solid transparent;
@@ -240,5 +240,269 @@ ul{
 .copy-rite{
     padding-top: 5px;
 }
+/* Tablets and smaller screens (1024px and below) */
+@media screen and (max-width: 1024px) {
+    .nav-search {
+        width: 400px;
+    }
+    
+    .shop-sec {
+        justify-content: space-around;
+    }
+    
+    .box {
+        width: 45%;
+        margin: 10px;
+    }
+    
+    .fot-panal2 {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
+    
+    .fot-panal2 ul {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    
+    .pal-opt p {
+        font-size: 0.8rem;
+        margin-left: 8px;
+    }
+}
+
+/* Medium mobile devices (768px and below) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 10px 5px;
+        justify-content: space-between;
+    }
+    
+    .nav-logo, .nav-add, .nav-search, .nav-signi, .nav-retun, .nav-cart {
+        margin: 5px;
+        flex: 1;
+        min-width: 120px;
+        text-align: center;
+    }
+    
+    .nav-search {
+        width: 100%;
+        order: 3;
+        margin-top: 10px;
+        flex: 100%;
+        min-width: auto;
+    }
+    
+    .nav-add, .nav-signi, .nav-retun {
+        display: block !important;
+        font-size: 0.7rem;
+    }
+    
+    .panal {
+        flex-direction: column;
+        height: auto;
+        padding: 5px 0;
+        position: relative;
+    }
+    
+    .pal-opt {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #232f3e;
+        z-index: 1000;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+    
+    .pal-opt p {
+        display: block;
+        margin: 8px 0;
+        padding: 5px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .pal-opt p:hover {
+        background-color: #37475a;
+    }
+    
+    .panal-all {
+        cursor: pointer;
+        padding: 8px 15px;
+        background-color: #37475a;
+        border-radius: 3px;
+    }
+    
+    .shop-sec {
+        justify-content: center;
+    }
+    
+    .box {
+        width: 90%;
+    }
+    
+    .fot-panal2 ul {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .hero-section {
+        height: 200px;
+    }
+    
+    .hero-mesg {
+        font-size: 0.75rem;
+        padding: 0 10px;
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+/* Small mobile devices (480px and below) */
+@media screen and (max-width: 480px) {
+    .navbar {
+        justify-content: space-around;
+        padding: 8px 3px;
+    }
+    
+    .nav-logo, .nav-add, .nav-signi, .nav-retun, .nav-cart {
+        flex: none;
+        width: auto;
+        min-width: auto;
+        font-size: 0.65rem;
+    }
+    
+    .nav-search {
+        width: 95%;
+        margin: 8px auto;
+    }
+    
+    .nav-add .address-first,
+    .nav-signi span,
+    .nav-retun span {
+        display: none;
+    }
+    
+    .pal-deal {
+        text-align: center;
+        margin-top: 5px;
+        font-size: 0.8rem;
+    }
+    
+    .box {
+        width: 95%;
+        height: auto;
+        padding: 10px 0;
+        margin: 8px 0;
+    }
+    
+    .box-imag {
+        height: 200px;
+    }
+    
+    .hero-section {
+        height: 150px;
+    }
+    
+    .hero-mesg {
+        height: auto;
+        font-size: 0.7rem;
+        padding: 8px 5px;
+    }
+    
+    .foot-pal4 {
+        height: auto;
+        padding: 15px 0;
+    }
+    
+    .pages {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Very small screens (320px and below) */
+@media screen and (max-width: 320px) {
+    .navbar {
+        padding: 5px 2px;
+    }
+    
+    .nav-search {
+        width: 98%;
+    }
+    
+    .nav-select {
+        font-size: 0.7rem;
+        padding: 5px;
+    }
+    
+    .search-ipt {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+    
+    .box {
+        width: 98%;
+        margin: 5px 0;
+    }
+    
+    .box-cont h2 {
+        font-size: 1rem;
+    }
+    
+    .hero-mesg {
+        font-size: 0.65rem;
+        padding: 5px;
+    }
+    
+    .panal-all {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+}
+
+/* Large screens optimization */
+@media screen and (min-width: 1440px) {
+    .navbar, .panal, .shop-sec, footer {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    
+    .shop-sec {
+        padding: 0 20px;
+    }
+}
+
+/* Landscape mode optimization */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .navbar {
+        height: 50px;
+        padding: 5px;
+    }
+    
+    .hero-section {
+        height: 120px;
+    }
+    
+    .box {
+        height: 320px;
+    }
+    
+    .box-imag {
+        height: 220px;
+    }
+    
+    .panal {
+        padding: 3px 0;
+    }
+}
+
 
 
